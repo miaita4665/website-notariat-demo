@@ -1,0 +1,57 @@
+.btn-custom {
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px; /* slightly rounded */
+    border: none;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+.btn-custom span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.btn-custom:hover {
+    transform: translateY(-2px); /* subtle lift */
+}
+.btn-custom:hover span {
+    transform: translateX(4px);
+}
+
+/* Button types */
+.btn-type1 { 
+    background-color: var(--main-color); 
+    color: #fff; 
+}
+.btn-type1:hover { 
+    background-color: var(--main-color); 
+    color:var(--secondary-color) ; 
+
+}
+.btn-type2 { 
+    background-color: var(--secondary-color); 
+    color: var(--main-color); 
+}
+.btn-type2:hover { 
+    background-color: var(--secondary-color); 
+    color: #fff; 
+}
+
+.call-btn {
+    position: fixed;
+    right: 20px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: bottom 0.3s ease; /* smooth movement */
+}
+
+.call-btn img {
+    width: 2rem;
+}

@@ -1,0 +1,22 @@
+/* ==========================
+   FOOTER STYLES
+   ========================== */
+
+footer {
+    background-color: var(--main-color);
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}

@@ -1,0 +1,138 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+:root {
+    /*--main-color: #2e2e2e;      /* Primary color (black)*/
+    /*--main-color: #1a2b4c;      /* Primary color (navy)*/
+    --main-color: #003333;      /* Primary color (teal)*/
+    /*--main-color: #1b3a2f;      /* Primary color (dark green)*/
+    /*--main-color: #2e4d2b;      /* Primary color (dark olive) */
+    /*--main-color:#1d4736;       /* Primary color (pine green) */
+    /*--main-color: #2c5f2d ;        /* Primary color (hunter green) */
+    --secondary-color: #f0cf6f; /* Secondary color(gold) */
+    --text-color: #ffffff;      /* White text color */
+}
+@media (prefers-color-scheme: dark) {
+      :root {
+        --main-color: #003333;  
+      }
+    }
+/* Reset and body */
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: var(--main-color); /* default text color */
+    font-family: 'Inter', Arial, sans-serif;
+}
+.bg-interior {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 0;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-color); 
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Scroll snapping on body */
+body {
+    scroll-snap-type: y proximity;
+    font-size: 1rem;
+  font-family: 'Minion Pro', sans-serif;
+  /* font-family: 'Trajan-Pro', serif; */
+  
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+h1, h2, h3, #brand-text {
+  font-family: 'Trajan Pro', 'Cinzel', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+/* Map iframe styling */
+iframe {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bg-interior { padding: 20px; }
+}
+
+/* Remove border-radius on all other elements */
+* {
+    border-radius: 0 !important;
+}
+.about-pers
+{
+    background-color: var(--main-color);
+}
+.about-pers p:first-child {
+    color: var(--secondary-color); /* Golden color */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.about-pers h4 {
+    color: white;
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.about-pers p:last-child {
+    color: #A0A0A0; /* Soft gray (not full gray) */
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Lista de fișiere */
+
+ .contact-info p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--main-color), var(--secondary-color);/* text elegant, nu albastru */
+  text-decoration: none;          /* elimină sublinierea */
+  transition: color 0.2s ease;
+  font-size: 1rem;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  color: var(--main-color, var(--secondary-color)); /* navy / gold după paleta ta */
+}
+
+.contact-info img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+

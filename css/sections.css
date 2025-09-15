@@ -1,0 +1,46 @@
+/* Sections */
+section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 60px 0;
+}
+
+/* Optional dark overlay */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+/* Section backgrounds */
+#intro{
+    background-image: url('pictures/about.jpg')
+}
+
+#despre-noi{
+    background-image: url('pictures/despre.jpg');
+}
+
+#notari{
+    background-color: #fff;
+}
+
+#traduceri {
+     background-image: url('pictures/about.jpg')
+}
+
+#acte{
+    background-image: url('pictures/acte\ si\ proceduri.jpg')
+}
+
+#contact{
+    background-image: url('pictures/law.jpg')
+}

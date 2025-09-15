@@ -1,0 +1,141 @@
+/* ==========================
+   CONTACT SECTION STYLES
+   ========================== */
+
+/* Form container inside section */
+#contact .bg-interior {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 0;
+}
+
+/* Contact form */
+#contact form {
+    width: 100%;
+}
+
+/* Input fields and textarea */
+#contact .form-control {
+    border-radius: 0; 
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Validation feedback */
+#contact .invalid-feedback {
+    font-size: 0.9rem;
+    color: #d9534f;
+}
+
+/* Buttons inside form */
+#contact .btn-custom {
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#contact .btn-custom span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#contact .btn-custom:hover {
+    transform: translateY(-2px);
+}
+
+#contact .btn-custom:hover span {
+    transform: translateX(4px);
+}
+
+/* File input hidden (handled by JS button) */
+#contact input[type="file"] {
+    display: none;
+}
+
+/* File list container */
+#contact .file-list {
+    background: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* Individual file item */
+#contact .file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+/* File name */
+#contact .file-item span {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Remove file button */
+#contact .file-remove {
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Warning when file limit reached */
+#contact .file-limit-warning {
+    color: #d9534f;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Contact info column */
+#contact .col-md-6 h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#contact .col-md-6 p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#contact .col-md-6 a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+#contact .col-md-6 a:hover {
+    text-decoration: underline;
+}
+
+/* Map iframe */
+#contact iframe {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #contact .bg-interior {
+        padding: 20px;
+    }
+
+    #contact iframe {
+        height: 250px;
+    }
+}
