@@ -21,26 +21,19 @@ section::before {
     z-index: 0;
 }
 /* Section backgrounds */
-#intro{
+#acasa{
     background-image: url('pictures/about.jpg')
 }
 
 #despre-noi{
     background-image: url('pictures/despre.jpg');
 }
-
-#notari{
-    background-color: #fff;
-}
-
-#traduceri {
-     background-image: url('pictures/about.jpg')
-}
-
 #acte{
     background-image: url('pictures/acte\ si\ proceduri.jpg')
 }
-
+#traduceri {
+     background-image: url('pictures/about.jpg')
+}
 #contact{
     background-image: url('pictures/law.jpg')
 }

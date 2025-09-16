@@ -1,22 +1,26 @@
-/* ==========================
-   FOOTER STYLES
-   ========================== */
 
-footer {
-    background-color: var(--main-color);
-    padding: 20px 0;
-    color: #fff;
-    text-align: center;
-    font-size: 0.9rem;
+.fancy-link {
+  color: white; /* Default text color */
+  text-decoration: none;
+  position: relative; /* So ::after positions relative to the link */
+  transition: color 0.3s ease;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 5px;
+.fancy-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
 }
 
-footer a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
+.fancy-link:hover {
+  color: var(--secondary-color);
+}
+
+.fancy-link:hover::after {
+  width: 100%;
 }

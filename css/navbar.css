@@ -10,11 +10,11 @@
     height: 5rem;
 }
 .navbar .navbar-brand img {
-    width: 6rem;
+    width: 20rem;
     transition: all 0.3s ease;
 }
 .navbar.scrolled .navbar-brand img {
-    width: 4rem;
+    width: 15rem;
 }
 
 /* Navbar links */
@@ -88,7 +88,7 @@
   }
 
   .navbar .navbar-brand img {
-    width: 3.5rem; /* smaller logo */
+    width: 2rem; /* smaller logo */
   }
 
   .navbar-brand #brand-text {
