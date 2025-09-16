@@ -69,3 +69,35 @@
 .offcanvas .nav-link:hover {
   color: var(--secondary-color); /* efect auriu */
 }
+/* Offcanvas menu - 3/4 screen width */
+.offcanvas {
+  width: 65vw !important;
+  max-width: 65vw !important;
+  background-color: var(--main-color);
+}
+
+.offcanvas-body {
+  background-color: var(--main-color);
+  height: 100%;
+  overflow-y: auto;
+
+}
+@media (max-width: 576px) {
+  .navbar {
+    height: 5rem; /* smaller height */
+  }
+
+  .navbar .navbar-brand img {
+    width: 3.5rem; /* smaller logo */
+  }
+
+  .navbar-brand #brand-text {
+    font-size: 0.9rem; /* reduce text size */
+  }
+}
+.navbar-brand #brand-text {
+  color: var(--secondary-color);
+  font-family: 'Trajan Pro', serif;
+  font-weight: 500; /* Semi-bold */
+}
+

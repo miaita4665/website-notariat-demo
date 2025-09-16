@@ -65,35 +65,67 @@
 
 
 <main>
-<!-- INTRO -->
-<section id="intro">
-  <div class="container">
-    <div class="d-flex row">
-      <div class="d-flex col-12 col-lg-6 col-sm-9 gap-5 mt-3 mt-md-5 btn-stack">
-        <div class="bg-interior ">
-          <h1 id="site-title">Birou Notarial</h1>
-          <p id="short-desc"></p>
-          </p>
-          <div class="d-flex flex-column flex-sm-row gap-3 mt-3">
+  <!-- INTRO -->
+  <section id="intro">
+    <div class="container">
+      <div class="row align-items-stretch">
+        <!-- Left Box -->
+        <div class="col-12 col-xl-6 mt-3 mt-md-5">
+          <div class="bg-interior h-100 d-flex flex-column justify-content-between">
             <div>
-              <button class="btn btn-custom btn-type2" onclick="location.href='#contact'">
-                Formular contact <span>➜</span>
-              </button>
+              <h1 id="site-title">Birou Notarial</h1>
+              <p class="text-justify text-indent" id="short-desc"></p>
+            </div>
+            <div class="d-flex flex-column flex-sm-row gap-3 mt-3">
+              <div>
+                <button class="btn btn-custom btn-type2" onclick="location.href='#contact'">
+                  Formular contact <span>➜</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-6 col-sm-3">
-        <div class="bg-interior contact-info mt-3 mt-md-5 ">
-            <p><a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912"><img src="icons/default/location_icon.svg" alt="location_icon">Strada Soldat Ghiță Șerban,nr 94, et 1, Sector 3, Bucuresti</a></p>
-            <p><a href="mailto:popovicibnp@gmail.com"><img src="icons/default/email_icon.svg" alt="email_icon">popovicibnp@gmail.com</a></p>
-            <p><a href="tel:0747046863"><img src="icons/default/phone_icon.svg" alt="phone_icon">0747 046 863</a></p>
-            <p><img src="icons/default/timetable_icon.svg" alt="timetable_icon"> <b>Luni - Vineri:</b>  09:00 - 17:00</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11400.04967845832!2d26.178678174587237!3d44.41239086982232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fd000be69ff3%3A0x5ee8f3c38803a5e0!2sPopovici%20%26%20Agachi%20Societate%20Profesional%C4%83%20Notarial%C4%83!5e0!3m2!1sen!2sro!4v1757653841544!5m2!1sen!2sro" width="800" height="600" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Right Box -->
+        <div class="col-12 col-xl-6 mt-3 mt-md-5">
+          <div class="bg-interior contact-info h-100 d-flex flex-column justify-content-between">
+            <div>
+              <p>
+                <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912">
+                  <img src="icons/default/location_icon.svg" alt="location_icon">
+                  Strada Soldat Ghiță Șerban, nr 94, et 1, Sector 3, Bucuresti
+                </a>
+              </p>
+              <p>
+                <a href="mailto:popovicibnp@gmail.com">
+                  <img src="icons/default/email_icon.svg" alt="email_icon">
+                  popovicibnp@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:0747046863">
+                  <img src="icons/default/phone_icon.svg" alt="phone_icon">
+                  0747 046 863
+                </a>
+              </p>
+              <p>
+                <img src="icons/default/timetable_icon.svg" alt="timetable_icon">
+                <b>Luni - Vineri:</b> 09:00 - 17:00
+              </p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11400.04967845832!2d26.178678174587237!3d44.41239086982232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fd000be69ff3%3A0x5ee8f3c38803a5e0!2sPopovici%20%26%20Agachi%20Societate%20Profesional%C4%83%20Notarial%C4%83!5e0!3m2!1sen!2sro!4v1757653841544!5m2!1sen!2sro"
+              width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
+
+
 
   <div class="floating buttons sticky-bottom">
     <!-- Floating Telefon -->
@@ -103,22 +135,22 @@
 
 <!-- DESPRE NOI -->
 <section id="despre-noi">
-  <div class="bg-interior container  col-lg-9 ">
+  <div class="bg-interior container  col-lg-12 ">
       <div class="row ">
           <h1>De ce să ne alegi?</h1> 
       </div>
       <div class="row mt-5">
-          <div class="col-md-4 text-wrap">
+          <div class="col-md-4 text-wrap ">
               <h3>Experiență profesională</h3>
-              <p>Avem peste 10 ani de experiență în domeniul notarului public, garantând corectitudinea și legalitatea tuturor documentelor.</p>
+              <p class="text-justify">Avem peste 10 ani de experiență în domeniul notarului public, garantând corectitudinea și legalitatea tuturor documentelor.</p>
           </div>
           <div class="col-md-4 text-wrap">
               <h3>Servicii complete</h3>
-              <p>De la autentificarea contractelor până la testamente și procuri, acoperim toate nevoile notariale ale clienților noștri.</p>
+              <p class="text-justify">De la autentificarea contractelor până la testamente și procuri, acoperim toate nevoile notariale ale clienților noștri.</p>
           </div>
-          <div class="col-md-4 text-wrap">
+          <div class="col-md-4 text-wrap ">
               <h3>Încredere și confidențialitate</h3>
-              <p>Respectăm confidențialitatea absolută și tratăm fiecare client cu atenție maximă și profesionalism.</p>
+              <p class="text-justify">Respectăm confidențialitatea absolută și tratăm fiecare client cu atenție maximă și profesionalism.</p>
           </div>
       </div>
   </div>
@@ -216,104 +248,90 @@
 
 <section>
   <div class="container mt-5 mb-5">
-    
     <div class="row g-2">
-        <div class="col-md-4">
-            <div class="card p-3 text-center px-4">
-                
-                <div class="user-image">
-                    
-            <img src="google_review_pfp.png" class="rounded-circle" width="80"
-                    >
-                    
-                </div>
-                
-                <div class="user-content">
-                    
-                    <h5 class="mb-0">Bruce Hardy</h5>
-                    <span>Software Developer</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
-                </div>
-                
-                <div class="ratings">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                </div>
-                
-            </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 text-center px-4">
+          <div class="user-image">
+            <img src="google_review_pfp.png" class="rounded-circle" width="80">
+          </div>
+
+          <div class="user-content">
+            <h5 class="mb-0">Bruce Hardy</h5>
+            <span>Software Developer</span>
+            <p class="text-justify text-indent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="ratings">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+          </div>
         </div>
-        
-        <div class="col-md-4">
-            
-            <div class="card p-3 text-center px-4">
-                
-                <div class="user-image">
-                    
-            <img src="google_review_pfp.png" class="rounded-circle" width="80"
-                    >
-                    
-                </div>
-                
-                <div class="user-content">
-                    
-                    <h5 class="mb-0">Mark Smith</h5>
-                    <span>Web Developer</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
-                </div>
-                
-                <div class="ratings">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                </div>
-                
-            </div>
-            
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 text-center px-4">
+          <div class="user-image">
+            <img src="google_review_pfp.png" class="rounded-circle" width="80">
+          </div>
+
+          <div class="user-content">
+            <h5 class="mb-0">Mark Smith</h5>
+            <span>Web Developer</span>
+            <p class="text-justify text-indent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="ratings">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+          </div>
         </div>
-        
-        <div class="col-md-4">
-            
-            <div class="card p-3 text-center px-4">
-                
-                <div class="user-image">
-                    
-            <img src="google_review_pfp.png" class="rounded-circle" width="80"
-                    >
-                    
-                </div>
-                
-                <div class="user-content">
-                    
-                    <h5 class="mb-0">Veera  Duncan</h5>
-                    <span>Software Architect</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
-                </div>
-                
-                <div class="ratings">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="star.png" alt="">
-                    <img src="empty_star.png" alt="">
-                </div>
-                
-            </div>
-            
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 text-center px-4">
+          <div class="user-image">
+            <img src="google_review_pfp.png" class="rounded-circle" width="80">
+          </div>
+
+          <div class="user-content">
+            <h5 class="mb-0">Veera Duncan</h5>
+            <span>Software Architect</span>
+            <p class="text-justify text-indent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="ratings">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="empty_star.png" alt="">
+          </div>
         </div>
-        
-        
+      </div>
+
     </div>
-    
-</div>
+  </div>
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact">

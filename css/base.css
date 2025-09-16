@@ -134,5 +134,11 @@ iframe {
   height: 20px;
   flex-shrink: 0;
 }
+.text-justify {
+  text-align: justify !important;
+}
+.text-indent {
+  text-indent: 2em;
+}
 
 
