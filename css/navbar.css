@@ -1,62 +1,73 @@
 /* Navbar styles */
 .navbar {
-    background-color: var(--main-color); 
-    transition: all 0.3s ease;
-    height: 8rem;
-    border-radius: 6px; /* slightly softer edges */
-    
+  background-color: var(--main-color);
+  transition: all 0.3s ease;
+  height: 8rem;
+  border-radius: 6px;
+  /* slightly softer edges */
+
 }
+
 .navbar.scrolled {
-    height: 5rem;
+  height: 5rem;
 }
+
 .navbar .navbar-brand img {
-    width: 20rem;
-    transition: all 0.3s ease;
+  width: 20rem;
+  transition: all 0.3s ease;
 }
+
 .navbar.scrolled .navbar-brand img {
-    width: 15rem;
+  width: 15rem;
 }
 
 /* Navbar links */
 #navbar-items .nav-link {
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #fff;
-    transition: color 0.3s ease, transform 0.2s ease;
-    font-size: 0.8rem;
-    
-}
-#navbar-items .nav-link:hover {
-    transform: translateY(-2px); /* subtle lift */
-}
-.navbar.scrolled #navbar-items .nav-link {
-    color: #ffffff;
-    font-size: 0.8rem;
-}
-.navbar.scrolled #navbar-items .nav-link:hover {
-    color: var(--secondary-color);
-}
-#navbar-items
-{
-  background-color: var(--main-color);
-  
-  
-}
-.navbar-toggler-icon
-{
-   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f0cf6f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-size: 0.8rem;
 
 }
-#langToggle {
-    width: 3rem; 
-    height: auto;
+
+#navbar-items .nav-link:hover {
+  transform: translateY(-2px);
+  /* subtle lift */
 }
+
+.navbar.scrolled #navbar-items .nav-link {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.navbar.scrolled #navbar-items .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+#navbar-items {
+  background-color: var(--main-color);
+
+
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f0cf6f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+#langToggle {
+  width: 3rem;
+  height: auto;
+}
+
 /* Optional: change on hover */
 .navbar-brand #brand-text {
   color: var(--secondary-color);
   font-family: 'Trajan Pro', serif;
 }
+
 .offcanvas,
 .offcanvas-body {
   background-color: var(--main-color);
@@ -67,8 +78,10 @@
 }
 
 .offcanvas .nav-link:hover {
-  color: var(--secondary-color); /* efect auriu */
+  color: var(--secondary-color);
+  /* efect auriu */
 }
+
 /* Offcanvas menu - 3/4 screen width */
 .offcanvas {
   width: 65vw !important;
@@ -82,22 +95,50 @@
   overflow-y: auto;
 
 }
+
 @media (max-width: 576px) {
   .navbar {
-    height: 5rem; /* smaller height */
+    height: 5rem;
+    /* smaller height */
   }
 
   .navbar .navbar-brand img {
-    width: 2rem; /* smaller logo */
+    width: 1.2rem;
+    /* smaller logo */
   }
 
   .navbar-brand #brand-text {
-    font-size: 0.9rem; /* reduce text size */
+    font-size: 0.9rem;
+    /* reduce text size */
   }
 }
+
+@media (max-width: 410px) {
+  .navbar {
+    height: 4rem;
+    /* smaller height */
+  }
+
+  .navbar .navbar-brand img.me-2 {
+    height: auto;
+    width: 11rem;
+    /* smaller logo */
+  }
+
+  .navbar-brand #brand-text {
+    font-size: 0.9rem;
+    /* reduce text size */
+  }
+
+  .navbar-toggler-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 .navbar-brand #brand-text {
   color: var(--secondary-color);
   font-family: 'Trajan Pro', serif;
-  font-weight: 500; /* Semi-bold */
+  font-weight: 500;
+  /* Semi-bold */
 }
-

@@ -15,27 +15,32 @@
 <link rel="stylesheet" href="css/buttons.css">
 <link rel="stylesheet" href="css/cards.css">
 <link rel="stylesheet" href="css/carousel.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <style>
   .ratings img {
     width: 20px; /* Ajustează dimensiunea după preferințe */
     height: auto;
     margin-right: 2px; /* Spațiere între stele */
   }
+  .bi {
+    text-decoration: none;
+    color: inherit;
+  }
  </style>
 
 </head>
 
 <body>
- <header>
+  <header>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container img">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand  align-items-center" href="#">
         <img src="icons/logo lung.png" alt="Logo" class="me-2" />
       </a>
 
       <!-- Buton offcanvas -->
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon";></span>
       </button>
 
       <!-- Offcanvas menu -->
@@ -88,30 +93,28 @@
         <!-- Right Box -->
         <div class="col-12 col-xl-6 mt-3 mt-md-5">
           <div class="bg-interior contact-info h-100 d-flex flex-column justify-content-between">
-            <div>
               <p>
-                <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912">
-                  <img src="icons/default/location_icon.svg" alt="location_icon">
+                <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912" class="fancy-link">
+                  <i class="bi bi-geo-alt-fill" ></i>
                   Strada Soldat Ghiță Șerban, nr 94, et 1, Sector 3, Bucuresti
                 </a>
               </p>
               <p>
-                <a href="mailto:popovicibnp@gmail.com">
-                  <img src="icons/default/email_icon.svg" alt="email_icon">
+                <a href="mailto:popovicibnp@gmail.com" class="fancy-link">
+                  <i class="bi bi-envelope-fill fancy-link-inverted" ></i>
                   popovicibnp@gmail.com
                 </a>
               </p>
               <p>
-                <a href="tel:0747046863">
-                  <img src="icons/default/phone_icon.svg" alt="phone_icon">
+                <a href="tel:0747046863" class="fancy-link">
+                  <i class="bi bi-telephone-fill"></i>
                   0747 046 863
                 </a>
               </p>
               <p>
-                <img src="icons/default/timetable_icon.svg" alt="timetable_icon">
+                <i class="bi bi-clock-fill" ></i>
                 <b>Luni - Vineri:</b> 09:00 - 17:00
               </p>
-            </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11400.04967845832!2d26.178678174587237!3d44.41239086982232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fd000be69ff3%3A0x5ee8f3c38803a5e0!2sPopovici%20%26%20Agachi%20Societate%20Profesional%C4%83%20Notarial%C4%83!5e0!3m2!1sen!2sro!4v1757653841544!5m2!1sen!2sro"
               width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"
@@ -123,35 +126,38 @@
     </div>
   </section>
 </main>
-
-
-
   <div class="floating buttons sticky-bottom">
     <!-- Floating Telefon -->
-      <button class="btn btn-custom btn-type2 call-btn"> <a href="tel:+40747046863" ><img src="icons/default/phone_icon.svg" alt="floating_phone_icon"></a></button>
+      <button class="btn btn-custom btn-type2 call-btn ">
+        <a href="tel:+40747046863">
+        <i class="bi bi-telephone-fill fs-4 main-color"></i>
+        </a>
+      </button>
 
   </div>
-
 <!-- DESPRE NOI -->
 <section id="despre-noi">
   <div class="bg-interior container  col-lg-12 ">
       <div class="row ">
-          <h1>De ce să ne alegi?</h1> 
+          <h1>De ce să ne alegi?</h1>
       </div>
-      <div class="row mt-5">
-          <div class="col-md-4 text-wrap ">
-              <h3>Experiență profesională</h3>
-              <p class="text-justify">Avem peste 10 ani de experiență în domeniul notarului public, garantând corectitudinea și legalitatea tuturor documentelor.</p>
-          </div>
-          <div class="col-md-4 text-wrap">
-              <h3>Servicii complete</h3>
-              <p class="text-justify">De la autentificarea contractelor până la testamente și procuri, acoperim toate nevoile notariale ale clienților noștri.</p>
-          </div>
-          <div class="col-md-4 text-wrap ">
-              <h3>Încredere și confidențialitate</h3>
-              <p class="text-justify">Respectăm confidențialitatea absolută și tratăm fiecare client cu atenție maximă și profesionalism.</p>
-          </div>
-      </div>
+      <div class="row mt-5 text-center">
+  <div class="col-md-4 text-wrap">
+      <h1><i class="bi bi-person-check secondary-color"></i></h1>
+      <h3>Experiență profesională </h3>
+      <p class="text-justify">Avem peste 10 ani de experiență în domeniul notarului public, garantând corectitudinea și legalitatea tuturor documentelor.</p>
+  </div>
+  <div class="col-md-4 text-wrap">
+      <h1> <i class="bi bi-file-text secondary-color"></i></h1>
+      <h3>Servicii complete</h3>
+      <p class="text-justify">De la autentificarea contractelor până la testamente și procuri, acoperim toate nevoile notariale ale clienților noștri.</p>
+  </div>
+  <div class="col-md-4 text-wrap">
+      <h1><i class="bi bi-award secondary-color"></i></h1>
+      <h3>Confidențialitate </h3>
+      <p class="text-justify">Respectăm confidențialitatea absolută și tratăm fiecare client cu atenție maximă și profesionalism.</p>
+  </div>
+</div>
   </div>
 </section>
 <section id="acte">
@@ -168,44 +174,44 @@
 
               <!-- Cards -->
               <div class="carousel-card">
-                <a href="">
                 <img src="pictures/card 1.png" alt="Document 1">
+                <a href="" class="fancy-link main-color">
                   <h3> Card 1</h3>
                   <p>Descriere pentru documentul 1.</p>
                 </a>
 
               </div>
               <div class="carousel-card">
-                <a href="">
-                  <img src="pictures/card 2.png" alt="Document 2">
+                <img src="pictures/card 2.png" alt="Document 2">
+                  <a href="" class="fancy-link main-color">
                   <h3> Card 2</h3>
                   <p>Descriere pentru documentul 2.</p>
                 </a>
               </div>
               <div class="carousel-card">
-                <a href="">
                   <img src="pictures/card 3.jpg" alt="Document 3">
+                  <a href="" class="fancy-link main-color">
                   <h3> Card 3</h3>
                   <p>Descriere pentru documentul 3.</p>
                 </a>
               </div>
               <div class="carousel-card">
-                <a href="">
                   <img src="pictures/card 1.png" alt="Document 4">
+                  <a href="" class="fancy-link main-color">
                   <h3> Card 4</h3>
                   <p>Descriere pentru documentul 4.</p>
                 </a>
               </div>
               <div class="carousel-card">
-                <a href="">
-                  <img src="pictures/card 2.png" alt="Document 5">
+                <img src="pictures/card 2.png" alt="Document 5">
+                  <a href="" class="fancy-link main-color">
                   <h3> Card 5</h3>
                   <p>Descriere pentru documentul 5.</p>
                 </a>
               </div>
               <div class="carousel-card">
-                <a href="">
-                  <img src="pictures/card 3.jpg" alt="Document 6">
+                <img src="pictures/card 3.jpg" alt="Document 6">
+                  <a href="" class="fancy-link main-color">
                   <h3> Card 6</h3>
                   <p>Descriere pentru documentul 6.</p>
                 </a>
@@ -376,38 +382,37 @@
       </div>
         
       <div class="col-md-6 mt-3 mt-md-0">
-        <h3>Informatii contact</h3>
-
-            <div class="contact-info">
+            <div>
               <p>
-                <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912" target="_blank" rel="noopener noreferrer" class="fancy-link-inverted">
-                  <img src="icons/default/location_icon.svg " alt="location_icon">
-                  Strada Soldat Ghiță Șerban, nr 94, et 1, Sector 3, București
+                <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912 " class="fancy-link main-color">
+                  <i class="bi bi-geo-alt-fill" ></i>
+                  Strada Soldat Ghiță Șerban, nr 94, et 1, Sector 3, Bucuresti
                 </a>
               </p>
-
               <p>
-                <a href="mailto:popovicibnp@gmail.com">
-                  <img src="icons/default/email_icon.svg" alt="email_icon">
+                <a href="mailto:popovicibnp@gmail.com" class="fancy-link main-color">
+                  <i class="bi bi-envelope-fill" ></i>
                   popovicibnp@gmail.com
                 </a>
               </p>
-
               <p>
-                <a href="tel:0747046863">
-                  <img src="icons/default/phone_icon.svg" alt="phone_icon">
+                <a href="tel:0747046863" class="fancy-link main-color">
+                  <i class="bi bi-telephone-fill"></i>
                   0747 046 863
                 </a>
               </p>
-
               <p>
-                <img src="icons/default/timetable_icon.svg" alt="timetable_icon">
+                <i class="bi bi-clock-fill" ></i>
                 <b>Luni - Vineri:</b> 09:00 - 17:00
               </p>
             </div>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11400.04967845832!2d26.178678174587237!3d44.41239086982232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fd000be69ff3%3A0x5ee8f3c38803a5e0!2sPopovici%20%26%20Agachi%20Societate%20Profesional%C4%83%20Notarial%C4%83!5e0!3m2!1sen!2sro!4v1757653841544!5m2!1sen!2sro" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11400.04967845832!2d26.178678174587237!3d44.41239086982232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fd000be69ff3%3A0x5ee8f3c38803a5e0!2sPopovici%20%26%20Agachi%20Societate%20Profesional%C4%83%20Notarial%C4%83!5e0!3m2!1sen!2sro!4v1757653841544!5m2!1sen!2sro"
+              width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
   </div>
 </section>
 </main>
@@ -487,7 +492,7 @@
 
     <!-- Copyright Row with subtle top border -->
     <div class="row footer-bottom">
-      <div class="col-12 text-center p-3 main-color text-light">
+      <div class="col-12 text-center p-3 text-light">
         <p class="mb-0">© 2025 Popovici & Agachi Societate Profesională Notarială. Toate drepturile rezervate.</p>
       </div>
     </div>
