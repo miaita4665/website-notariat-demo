@@ -26,21 +26,37 @@
     text-decoration: none;
     color: inherit;
   }
- </style>
-
+  
+</style>
 </head>
 
 <body>
-  <header>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  
+  <header class="sticky-top">
+  <!-- Topbar -->
+  <div class="topbar  " style="background-color: #336666;">
+    <div class="container d-flex justify-content-between align-items-center " >
+      <span class="text-muted small">
+        <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912 " class="fancy-link " style="color: white;">
+                  <i class="bi bi-geo-alt-fill" style="color: var(--secondary-color);"></i>
+                  Strada Soldat Ghiță Șerban, nr 94, et 1, Sector 3, Bucuresti
+                </a></span>
+      <a class="btn btn-sm p-0" href="#">
+        <img id="langToggle" src="en.svg" alt="Change language" style="width:2rem; height:auto;">
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg ">
     <div class="container img">
-      <a class="navbar-brand  align-items-center" href="#">
-        <img src="icons/logo lung.png" alt="Logo" class="me-2" />
+      <a class="navbar-brand align-items-center" href="#">
+        <img src="icons/logo lung .svg" alt="Logo" class="me-2" />
       </a>
 
       <!-- Buton offcanvas -->
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-        <span class="navbar-toggler-icon";></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Offcanvas menu -->
@@ -52,19 +68,16 @@
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item"><a class="nav-link" href="#acasa">HOME</a></li>
             <li class="nav-item"><a class="nav-link" href="#despre-noi">DESPRE NOI</a></li>
-            <li class="nav-item"><a class="nav-link" href="#acte">ACTE & PROCEDURI</a></li>
-            <li class="nav-item"><a class="nav-link" href="#traduceri">TRADUCERI/LEGALIZĂRI</a></li>
+            <li class="nav-item"><a class="nav-link" href="#acte">SERVICII</a></li>
+
             <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#"><img id="langToggle" src="en.svg" alt="Change language"></a>
-            </li>
           </ul>
         </div>
       </div>
-
     </div>
   </nav>
 </header>
+
 
 
 
@@ -74,10 +87,10 @@
     <div class="container">
       <div class="row align-items-stretch">
         <!-- Left Box -->
-        <div class="col-12 col-xl-6 mt-3 mt-md-5">
+        <div class="col-lg-8 col-xl-6 mt-3 mt-md-5">
           <div class="bg-interior h-100 d-flex flex-column justify-content-between">
             <div>
-              <h1 id="site-title">Birou Notarial</h1>
+              <h1 id="site-title">SPN Popovici & Agachi</h1>
               <p class="text-justify text-indent" id="short-desc"></p>
             </div>
             <div class="d-flex flex-column flex-sm-row gap-3 mt-3">
@@ -90,51 +103,17 @@
           </div>
         </div>
 
-        <!-- Right Box -->
-        <div class="col-12 col-xl-6 mt-3 mt-md-5">
-          <div class="bg-interior contact-info h-100 d-flex flex-column justify-content-between">
-              <p>
-                <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912" class="fancy-link">
-                  <i class="bi bi-geo-alt-fill" ></i>
-                  Strada Soldat Ghiță Șerban, nr 94, et 1, Sector 3, Bucuresti
-                </a>
-              </p>
-              <p>
-                <a href="mailto:popovicibnp@gmail.com" class="fancy-link">
-                  <i class="bi bi-envelope-fill fancy-link-inverted" ></i>
-                  popovicibnp@gmail.com
-                </a>
-              </p>
-              <p>
-                <a href="tel:0747046863" class="fancy-link">
-                  <i class="bi bi-telephone-fill"></i>
-                  0747 046 863
-                </a>
-              </p>
-              <p>
-                <i class="bi bi-clock-fill" ></i>
-                <b>Luni - Vineri:</b> 09:00 - 17:00
-              </p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11400.04967845832!2d26.178678174587237!3d44.41239086982232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fd000be69ff3%3A0x5ee8f3c38803a5e0!2sPopovici%20%26%20Agachi%20Societate%20Profesional%C4%83%20Notarial%C4%83!5e0!3m2!1sen!2sro!4v1757653841544!5m2!1sen!2sro"
-              width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
           </div>
         </div>
       </div>
     </div>
   </section>
 </main>
-  <div class="floating buttons sticky-bottom">
-    <!-- Floating Telefon -->
-      <button class="btn btn-custom btn-type2 call-btn ">
-        <a href="tel:+40747046863">
-        <i class="bi bi-telephone-fill fs-4 main-color"></i>
-        </a>
-      </button>
-
-  </div>
+  <div class="floating-buttons">
+  <a href="tel:+40747046863" class="btn btn-type2 call-btn">
+    <i class="bi bi-telephone-fill fs-4"></i>
+  </a>
+</div>
 <!-- DESPRE NOI -->
 <section id="despre-noi">
   <div class="bg-interior container  col-lg-12 ">
@@ -143,17 +122,17 @@
       </div>
       <div class="row mt-5 text-center">
   <div class="col-md-4 text-wrap">
-      <h1><i class="bi bi-person-check secondary-color"></i></h1>
+      <h1><i class="bi bi-person-check secondary-color" style="font-size: 5rem;"></i></h1>
       <h3>Experiență profesională </h3>
       <p class="text-justify">Avem peste 10 ani de experiență în domeniul notarului public, garantând corectitudinea și legalitatea tuturor documentelor.</p>
   </div>
   <div class="col-md-4 text-wrap">
-      <h1> <i class="bi bi-file-text secondary-color"></i></h1>
+      <h1> <i class="bi bi-file-text secondary-color" style="font-size: 5rem;"></i></h1>
       <h3>Servicii complete</h3>
       <p class="text-justify">De la autentificarea contractelor până la testamente și procuri, acoperim toate nevoile notariale ale clienților noștri.</p>
   </div>
   <div class="col-md-4 text-wrap">
-      <h1><i class="bi bi-award secondary-color"></i></h1>
+      <h1><i class="bi bi-award secondary-color" style="font-size: 5rem;"></i></h1>
       <h3>Confidențialitate </h3>
       <p class="text-justify">Respectăm confidențialitatea absolută și tratăm fiecare client cu atenție maximă și profesionalism.</p>
   </div>
@@ -164,7 +143,7 @@
   <div class="bg-interior container">
     <div class="row">
       <div class="col-12">
-        <h1>Documente</h1>
+        <h1>Servicii Notariale</h1>
 
         <!-- Carousel Wrapper -->
         <div class="carousel-wrapper">
@@ -173,48 +152,37 @@
             <div class="carousel-track">
 
               <!-- Cards -->
+  
               <div class="carousel-card">
-                <img src="pictures/card 1.png" alt="Document 1">
-                <a href="" class="fancy-link main-color">
-                  <h3> Card 1</h3>
-                  <p>Descriere pentru documentul 1.</p>
-                </a>
-
+                <img src="icons/logo auriu.svg" alt="" id="icon-traduceri" style="width: 5rem;">
+                <h3>  Autentificări</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="carousel-card">
-                <img src="pictures/card 2.png" alt="Document 2">
-                  <a href="" class="fancy-link main-color">
-                  <h3> Card 2</h3>
-                  <p>Descriere pentru documentul 2.</p>
-                </a>
+                <img src="icons/logo auriu.svg" alt="" id="icon-traduceri" style="width: 5rem;">
+                <h3>Succesiuni</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="carousel-card">
-                  <img src="pictures/card 3.jpg" alt="Document 3">
-                  <a href="" class="fancy-link main-color">
-                  <h3> Card 3</h3>
-                  <p>Descriere pentru documentul 3.</p>
-                </a>
+                <img src="icons/logo auriu.svg" alt="" id="icon-traduceri" style="width: 5rem;">
+                <h3>Contracte civile </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="carousel-card">
-                  <img src="pictures/card 1.png" alt="Document 4">
-                  <a href="" class="fancy-link main-color">
-                  <h3> Card 4</h3>
-                  <p>Descriere pentru documentul 4.</p>
-                </a>
+                <img src="icons/logo auriu.svg" alt="" id="icon-traduceri" style="width: 5rem;">
+                <h3>Contracte comerciale</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="carousel-card">
-                <img src="pictures/card 2.png" alt="Document 5">
-                  <a href="" class="fancy-link main-color">
-                  <h3> Card 5</h3>
-                  <p>Descriere pentru documentul 5.</p>
-                </a>
+                <img src="icons/logo auriu.svg" alt="" id="icon-traduceri" style="width: 5rem;">
+                <h3>Traduceri & Legalizări</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="carousel-card">
-                <img src="pictures/card 3.jpg" alt="Document 6">
-                  <a href="" class="fancy-link main-color">
-                  <h3> Card 6</h3>
-                  <p>Descriere pentru documentul 6.</p>
-                </a>
+                <img src="icons/logo auriu.svg.svg" alt="" id="icon-traduceri" style="width: 5rem;">
+                <h3>Consultanță juridică notarială</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
               </div>
             </div>
           </div>
@@ -224,32 +192,6 @@
     </div>
   </div>
 </section>
-
-<!-- TRADUCERI -->
-<section id="traduceri">
-  <div class="bg-interior container text-center">
-    <h1>Traduceri /Legalizări</h1>
-    <div class="row mt-5">
-      <div class="col-md-4">
-        <h2><img src="icons/logo.png" alt="" id="icon-traduceri" style="width: 5rem;"></h2>
-        <h3>Acte personale</h3>
-        <p>Traduceri/Legalizări pentru acte de identitate, certificate de naștere, căsătorie </p>
-      </div>
-      <div class="col-md-4">
-        <h2><img src="icons/logo.png" alt="" id="icon-traduceri" style="width: 5rem;"></h2>
-        <h3>Documente juridice</h3>
-        <p>Traduceri/Legalizări pentru contracte, acte adiționale, hotărâri judecătorești </p>
-      </div>
-      <div class="col-md-4">
-        <h2><img src="icons/logo.png" alt="" id="icon-traduceri" style="width: 5rem;"></h2>
-        <h3>Acte comerciale</h3>
-        <p>Traduceri/Legalizări pentru facturi, contracte comerciale, documente de înființare </p>
-      </div>
-    </div>
-    <button class="btn btn-custom btn-type2 mt-4" onclick="location.href='#contact'">Solicită ➜ </button>
-  </div>
-</section>
-
 
 <section>
   <div class="container mt-5 mb-5">
@@ -425,13 +367,14 @@
       <div class="dsvy-footer-widget dsvy-footer-widget-col-1 col-12 col-md-6">
         <aside class="widget_text widget widget_custom_html">
           <div class="textwidget custom-html-widget">
+            <a href="#top">
             <img 
-              src="icons/logo lung.png" 
+              src="icons/logo lung .svg" 
               alt="Societate Profesională Notarială Popovici & Agachi" 
               style="width: 31.25rem; height: auto;" 
               class="img-fluid" 
               loading="lazy"
-            >
+            ></a>
 
             <p class="sal-sol d-flex flex-wrap gap-2">
               <a href="https://reclamatiisal.anpc.ro/" target="_blank">
@@ -466,8 +409,7 @@
             <ul class="list-unstyled">
               <li><a href="#acasa" class="fancy-link">Home</a></li>
               <li><a href="#despre-noi" class="fancy-link">Despre Noi</a></li>
-              <li><a href="#acte" class="fancy-link">Acte & Proceduri</a></li>
-              <li><a href="#traduceri" class="fancy-link">Traduceri/Legalizări</a></li>
+              <li><a href="#acte" class="fancy-link">Servicii Notariale</a></li>
               <li><a href="#contact" class="fancy-link">Contact</a></li>
             </ul>
           </div>
@@ -493,7 +435,7 @@
     <!-- Copyright Row with subtle top border -->
     <div class="row footer-bottom">
       <div class="col-12 text-center p-3 text-light">
-        <p class="mb-0">© 2025 Popovici & Agachi Societate Profesională Notarială. Toate drepturile rezervate.</p>
+        <p class="mb-0">© 2025 Popovici & Agachi Societate Profesională Notarială</p>
       </div>
     </div>
   </div>

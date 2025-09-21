@@ -24,10 +24,9 @@
 }
 
 .carousel-card img {
-  width: 100%;
-  max-width: 16rem;
-  height: 200px; /* pick a fixed height */
-  object-fit: cover; /* crop to fill the box */
+
+  height: 5rem; /* pick a fixed height */
+  width: 5rem;  /* pick a fixed width */
   border-radius: 5px;
   margin: 10px 0;
 }

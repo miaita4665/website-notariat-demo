@@ -9,7 +9,8 @@
     /*--main-color:#1d4736;       /* Primary color (pine green) */
     /*--main-color: #2c5f2d ;        /* Primary color (hunter green) */
     --secondary-color: #f0cf6f; /* Secondary color(gold) */
-    --text-color: var(--main-color);      /* White text color */
+    --text-color: var(--main-color);      
+    --third-color: #dccca3;/* White text color */
 }
 @media (prefers-color-scheme: dark) {
       :root {

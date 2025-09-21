@@ -22,7 +22,7 @@
 /* Button types */
 .btn-type1 { 
     background-color: var(--main-color); 
-    color: #fff; 
+    color: var(--secondary-color); 
 }
 .btn-type1:hover { 
     background-color: var(--main-color); 
@@ -39,18 +39,19 @@
 }
 
 .call-btn {
-    position: fixed;
-    right: 20px;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 999;
-    transition: bottom 0.3s ease; /* smooth movement */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1050;
 }
+
 
 .call-btn img {
     width: 2rem;

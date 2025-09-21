@@ -51,12 +51,26 @@
 </style>
 </head>
 <body>
- <header>
-  
-  <nav class="navbar navbar-expand-lg fixed-top">
+<header class="sticky-top">
+  <!-- Topbar -->
+  <div class="topbar  " style="background-color: #336666;">
+    <div class="container d-flex justify-content-between align-items-center " >
+      <span class="text-muted small">
+        <a href="https://www.google.com/maps?ll=44.41362%2C26.178669&z=16&t=m&hl=ro&gl=RO&mapclient=embed&cid=6838984055288210912 " class="fancy-link " style="color: white;">
+                  <i class="bi bi-geo-alt-fill" style="color: var(--secondary-color);"></i>
+                  Strada Soldat Ghiță Șerban, nr 94, et 1, Sector 3, Bucuresti
+                </a></span>
+      <a class="btn btn-sm p-0" href="#">
+        <img id="langToggle" src="en.svg" alt="Change language" style="width:2rem; height:auto;">
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg ">
     <div class="container img">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="icons/logo lung.png" alt="Logo" class="me-2" />
+      <a class="navbar-brand align-items-center" href="index.html">
+        <img src="icons/logo lung .svg" alt="Logo" class="me-2" />
       </a>
 
       <!-- Buton offcanvas -->
@@ -71,18 +85,14 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item"><a class="nav-link" href="index.html#home">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#despre-noi">DESPRE NOI</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#acte">ACTE & PROCEDURI</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#traduceri">TRADUCERI/LEGALIZĂRI</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#"><img id="langToggle" src="en.svg" alt="Change language"></a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">DESPRE NOI</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">SERVICII</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
-
     </div>
   </nav>
 </header>
@@ -125,7 +135,7 @@
 </section>
 </body>
 
-  <footer>
+<footer>
   <div class="container">
     <div class="row main-color text-light p-4 m-0 justify-content-center">
 
@@ -133,13 +143,14 @@
       <div class="dsvy-footer-widget dsvy-footer-widget-col-1 col-12 col-md-6">
         <aside class="widget_text widget widget_custom_html">
           <div class="textwidget custom-html-widget">
+            <a href="index.html">
             <img 
-              src="icons/logo lung.png" 
+              src="icons/logo lung .svg" 
               alt="Societate Profesională Notarială Popovici & Agachi" 
               style="width: 31.25rem; height: auto;" 
               class="img-fluid" 
               loading="lazy"
-            >
+            ></a>
 
             <p class="sal-sol d-flex flex-wrap gap-2">
               <a href="https://reclamatiisal.anpc.ro/" target="_blank">
@@ -172,11 +183,10 @@
           <h2 style="color: white;"><a href="#" class="fancy-link">Meniu</a></h2>
           <div class="textwidget custom-html-widget">
             <ul class="list-unstyled">
-              <li><a href="index.html#home" class="fancy-link">Home</a></li>
-              <li><a href="index.html#despre-noi" class="fancy-link">Despre Noi</a></li>
-              <li><a href="index.html#acte" class="fancy-link">Acte & Proceduri</a></li>
-              <li><a href="index.html#traduceri" class="fancy-link">Traduceri/Legalizări</a></li>
-              <li><a href="index.html#contact" class="fancy-link">Contact</a></li>
+              <li><a href="#acasa" class="fancy-link">Home</a></li>
+              <li><a href="#despre-noi" class="fancy-link">Despre Noi</a></li>
+              <li><a href="#acte" class="fancy-link">Servicii Notariale</a></li>
+              <li><a href="#contact" class="fancy-link">Contact</a></li>
             </ul>
           </div>
         </aside>
@@ -200,8 +210,8 @@
 
     <!-- Copyright Row with subtle top border -->
     <div class="row footer-bottom">
-      <div class="col-12 text-center p-3 main-color text-light">
-        <p class="mb-0">© 2025 Popovici & Agachi Societate Profesională Notarială. Toate drepturile rezervate.</p>
+      <div class="col-12 text-center p-3 text-light">
+        <p class="mb-0">© 2025 Popovici & Agachi Societate Profesională Notarială</p>
       </div>
     </div>
   </div>
